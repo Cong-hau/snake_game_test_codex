@@ -1,0 +1,8 @@
+{
+  "name": "snake-game-test-codex",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test"
+  }
+}

@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Snake</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main>
+      <h1>Snake</h1>
+      <div class="panel">
+        <div>
+          <strong>Score:</strong>
+          <span data-score>0</span>
+        </div>
+        <div>
+          <strong>Status:</strong>
+          <span data-status>Running</span>
+        </div>
+      </div>
+      <div class="actions">
+        <button type="button" data-pause>Pause / Resume (Space)</button>
+        <button type="button" data-restart>Restart (Enter after game-over)</button>
+      </div>
+      <section class="board" aria-label="snake board" data-board></section>
+
+      <div class="controls" aria-label="touch controls">
+        <div></div>
+        <button type="button" data-control="ArrowUp">↑</button>
+        <div></div>
+        <button type="button" data-control="ArrowLeft">←</button>
+        <button type="button" data-control="ArrowDown">↓</button>
+        <button type="button" data-control="ArrowRight">→</button>
+      </div>
+
+      <p class="small">Controls: Arrow keys / WASD. Space pauses. Avoid walls and your own tail.</p>
+    </main>
+    <script type="module" src="./src/game.js"></script>
+  </body>
+</html>
